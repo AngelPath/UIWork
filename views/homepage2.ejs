@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Tell the browser to be responsive to screen width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title><!-- Font Awesome-->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css"><!-- Ionicons-->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bbootstrap 4-->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"><!-- iCheck-->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"><!-- JQVMap-->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css"><!-- Theme style-->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css"><!-- overlayScrollbars-->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css"><!-- Daterange picker-->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css"><!-- summernote-->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css"><!-- Google Font: Source Sans Pro-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- flag-icon-->
+    <link rel="stylesheet" href="plugins/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/public/css/css/custom.css">
+    <style>
+        #alert {
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Navbar-->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links-->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
+                            class="fas fa-bars"></i></a></li><!-- Brand Logo-->
+            </ul><a href="#"><span class="logo-lg"><img class="brandlogo-image"
+                        src="xxx"></span></a>
+        </nav><!-- /.navbar-->
+        <!-- Main Sidebar Container-->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Sidebar-->
+            <div class="sidebar">
+                <!-- Sidebar Menu-->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-header">NAVIGATION</li>
+              <li class="nav-item">
+                <a class="nav-link" href="/" id="load"
+                  ><i class="nav-icon fas fa-home"></i>
+                  <p>Home</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/homepage"
+                  ><i class="nav-icon fas fa-file-excel"></i>
+                  <p>Homepage UI</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/lookup" id="load"
+                  ><i class="nav-icon fas fa-search"></i>
+                  <p>Order Lookup UI</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/homepage2"
+                  ><i class="nav-icon fas fa-file-excel"></i>
+                  <p>Homepage UI 2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/report" id="load"
+                  ><i class="nav-icon fas fa-search"></i>
+                  <p>Report Page UI</p>
+                </a>
+              </li>
+                        
+                    </ul>
+                </nav><!-- /.sidebar-menu-->
+                <!-- /.sidebar-->
+            </div>
+        </aside><!-- Content Wrapper. Contains page content-->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header)-->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark"></h1>
+                        </div><!-- /.col-->
+                    </div><!-- /.row-->
+                </div><!-- /.container-fluid-->
+            </div><!-- /.content-header-->
+            <!-- Main content-->
+            <section class="content">
+                <h2>Service Checker</h2>
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <div class="info-box"><span class="info-box-icon bg-danger elevation-1"><i
+                                            class="fas fa-times-circle"></i></span>
+                                    <div class="info-box-content"><span class="info-box-text">Failed Tests as of Thu Aug
+                                            05 2021 08:27:16 GMT-0400 (Eastern Daylight Time)</span><span
+                                            class="info-box-number">0</span></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <div class="info-box mb-3"><span class="info-box-icon bg-success elevation-1"><i
+                                            class="fas fa-thumbs-up"></i></span>
+                                    <div class="info-box-content"><span class="info-box-text">Passed Tests as of Thu Aug
+                                            05 2021 08:27:16 GMT-0400 (Eastern Daylight Time)</span><span
+                                            class="info-box-number">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header border-0">
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="card-title">All Tests Run Report</h3><a
+                                                href="/report">View Report</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <p class="d-flex flex-column"><span
+                                                    class="text-bold text-lg">439</span><span>Total Tests</span></p>
+                                        </div>
+                                        <div class="position-relative mb-4"><canvas class="chartjs-render-monitor"
+                                                id="visitors-chart" height="352"
+                                                style="display: block; height: 200px; width: 524px;"
+                                                width="924"></canvas></div>
+                                        <div class="d-flex flex-row justify-content-end"><span class="mr-2"><i
+                                                    class="fas fa-square text-primary"></i> This Week</span><span><i
+                                                    class="fas fa-square text-gray"></i> Last Week</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>var lastWeekData = JSON.parse("[197,194,194,194,165,165,165]");
+                            var thisWeekData = JSON.parse("[165,137,0,68,69,0,0]");
+                            var thisWeekDataDates = "7/30/2021,7/31/2021,8/1/2021,8/2/2021,8/3/2021,8/4/2021,8/5/2021".split(",");
+                            var chart = document.getElementById("visitors-chart");
+
+                            var ticksStyle = {
+                                fontColor: '#495057',
+                                fontStyle: 'bold'
+                            }
+
+                            var mode = 'nearest'
+                            var intersect = true
+                            var visitorsChart = {
+                                data: {
+                                    labels: thisWeekDataDates,
+                                    datasets: [
+                                        {
+                                            type: "line",
+                                            data: thisWeekData,
+                                            backgroundColor: "transparent",
+                                            borderColor: "#007bff",
+                                            pointBorderColor: "#007bff",
+                                            pointBackgroundColor: "#007bff",
+                                            fill: false,
+                                            // pointHoverBackgroundColor: '#007bff',
+                                            // pointHoverBorderColor    : '#007bff'
+                                        },
+                                        {
+                                            type: "line",
+                                            data: lastWeekData,
+                                            backgroundColor: "tansparent",
+                                            borderColor: "#ced4da",
+                                            pointBorderColor: "#ced4da",
+                                            pointBackgroundColor: "#ced4da",
+                                            fill: false,
+                                            // pointHoverBackgroundColor: '#ced4da',
+                                            // pointHoverBorderColor    : '#ced4da'
+                                        },
+                                    ],
+                                },
+                                options: {
+                                    maintainAspectRatio: false,
+                                    tooltips: {
+                                        mode: mode,
+                                        intersect: intersect,
+                                    },
+                                    hover: {
+                                        mode: mode,
+                                        intersect: intersect,
+                                    },
+                                    legend: {
+                                        display: false,
+                                    },
+                                    scales: {
+                                        yAxes: [
+                                            {
+                                                // display: false,
+                                                gridLines: {
+                                                    display: true,
+                                                    lineWidth: "4px",
+                                                    color: "rgba(0, 0, 0, .2)",
+                                                    zeroLineColor: "transparent",
+                                                },
+                                                ticks:
+                                                {
+                                                    beginAtZero: true,
+                                                    suggestedMax: 200,
+                                                },
+                                                ticksStyle
+                                            },
+                                        ],
+                                        xAxes: [
+                                            {
+                                                display: true,
+                                                gridLines: {
+                                                    display: false,
+                                                },
+                                                ticks: ticksStyle,
+                                            },
+                                        ],
+                                    },
+                                },
+                            };
+
+                            window.onload = function () {
+                                new Chart(chart, visitorsChart);
+                            }</script>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Search Test Report History</h3>
+                            </div>
+                            <div class="card-body">
+                                <form id="dateform" method="get" onsubmit="return DateForm()">
+                                    <div class="form-group">
+                                        <div class="container">
+                                            <p id="alert"></p>
+                                            <div class="row">
+                                                <div class="col"><label class="pr-2" for="jobName">Test Name:
+                                                    </label><select id="jobName" name="jobName">
+                                                        <option value="XXX">Check inventory
+                                                            </option>
+                                                        <option value="XXX">Payment
+                                                            service </option>
+                                                        <option value="XXX">
+                                                            Check shipment email </option>
+                                                        <option value="XXX">Address validation
+                                                            </option>
+                                                        <option value="XXX">Files exist</option>
+                                                        <option value="XXX">Availability Service
+                                                            </option>
+                                                        <option value="XXX">Inventory service</option>
+                                                        <option value="XXX">Manuals service</option>
+                                                    </select></div>
+                                            </div>
+                                            <div class="row pt-4">
+                                                <div class="col"><label class="pr-2" for="date1">Single Date:
+                                                    </label><input id="dateSingle" type="date" name="date1"></div>
+                                            </div>
+                                            <div class="row pt-4"><b>Date Range:</b></div>
+                                            <div class="row pt-2">
+                                                <div class="col"><label class="pr-2" for="date1">First Date:
+                                                    </label><input id="dateFirst" type="date" name="date1"></div>
+                                                <div class="col"><label class="pr-2" for="date2">Second Date:
+                                                    </label><input id="dateSecond" type="date" name="date2"></div>
+                                            </div>
+                                            <div class="row pt-4">
+                                                <div class="col"><input class="btn btn-primary" type="submit"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-navy">
+                                <h3 class="card-title">Attention Required for these tests:</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <h4>No tests have failed today</h4>
+                                </ul><a href="/homepage2">View Daily Report</a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>function DateForm() {
+                            var form = document.getElementById('dateform');
+                            if ((form.dateFirst.value) && (form.dateSecond.value) && (form.dateSingle.value)) {
+                                document.getElementById("alert").innerHTML = "Please enter a valid date or date range";
+                                return false;
+                            }
+                            else if (form.dateSingle.value) {
+                                form.action = '/homepage2';
+                                return true;
+                            }
+                            else if ((form.dateFirst.value) && (form.dateSecond.value)) {
+                                form.action = '/homepage2';
+                                return true;
+                            }
+                            else {
+                                document.getElementById("alert").innerHTML = "Please enter a valid date or date range";
+                                return false;
+                            }
+                        }
+
+                    </script>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Data on this page was processed on Thu Aug 05 2021 08:27:16 GMT-0400 (Eastern Daylight
+                                Time)</p>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- /.content-->
+        </div><!-- /.content-wrapper-->
+        <footer class="main-footer">Copyright &copy; Mikaela 2021<div class="float-right d-none d-sm-inline-block">
+                Based on AdminLTE 3.0.5</div>
+        </footer><!-- Control Sidebar-->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here-->
+        </aside><!-- /.control-sidebar-->
+    </div><!-- ./wrapper-->
+    <!-- jQuery-->
+    <script src="plugins/jquery/jquery.min.js"></script><!-- jQuery UI 1.11.4-->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip-->
+    <script>$.widget.bridge('uibutton', $.ui.button)</script><!-- Bootstrap 4-->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script><!-- ChartJS-->
+    <script src="plugins/chart.js/Chart.min.js"></script><!-- Sparkline-->
+    <script src="plugins/sparklines/sparkline.js"></script><!-- JQVMap-->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script><!-- jQuery Knob Chart-->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script><!-- daterangepicker-->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script><!-- Tempusdominus Bootstrap 4-->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script><!-- Summernote-->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script><!-- overlayScrollbars-->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script><!-- AdminLTE App-->
+    <script src="dist/js/adminlte.js"></script><!-- AdminLTE dashboard demo (This is only for demo purposes)-->
+    <!-- AdminLTE for demo purposes-->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+</body>
+
+</html>
